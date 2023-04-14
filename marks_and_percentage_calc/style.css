@@ -1,0 +1,116 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-transform: capitalize;
+}
+.section-center{
+	display: grid;
+	/* place-items: center; */
+	align-items: center;
+	height: 100vh;
+	 background: linear-gradient(rgba(182, 212, 63, 0.25), rgba(0, 0, 0, 0.7)), url("./images/book-1822474_1280.jpg") no-repeat center/cover ;
+}
+.calculator_container{
+	background-color: #393e3e;
+	max-width: 25rem;
+	width: 90vw;
+	margin-left:3rem;
+	height: 60vh;
+	margin-top:3rem;
+	padding: 2rem;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	border: solid 3px white;
+	opacity: 0.8;
+	}
+.input-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+	margin-bottom: 2rem;
+}
+.input-container input{
+	background-color: transparent;
+	text-align: center;
+	padding: 0.5rem 0;
+	color: white;
+	border: 2px solid white;
+	border-radius: 5px;
+}
+.input-container input:focus-visible{
+	outline: white 2px solid;
+}
+.calculate_btn{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	padding: 1rem ;
+	border-radius: 5px;
+}
+.calculate_btn:hover{
+	transform: scale(1.01);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) ;
+	font-weight: 900;
+}
+.bottom-title{
+	color: white;
+	font-size: 2.5rem;
+	letter-spacing: 5px;
+	line-height: 2.7rem;
+	width: 25rem;
+	margin-left: 3rem;
+	text-align: center;
+}
+.top{
+	font-size: 3rem;
+}
+
+.down{
+	font-size: 4rem;
+}
+.result{
+	color:white;
+	text-align: center;
+	margin-top: 1rem;
+	font-size: 0.8rem;
+}
+@media screen and (max-width:800px){
+	.calculator_container{
+		margin: 0 auto;
+		height: auto;
+		}
+		.calculate_btn{
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-weight: 500;
+			padding: 0.5rem ;
+			border-radius: 5px;
+		}
+		.input-container{
+			/* place-items: center; */
+			margin: 0 auto;
+			width: 90%;
+			grid-template-columns: 1fr ;
+			gap: 0.5rem;
+			margin-bottom: 1rem;
+		}
+		.bottom-title{
+			color: white;
+			font-size: 2rem;
+			letter-spacing: 5px;
+			line-height: 2.7rem;
+			width: 25rem;
+			max-width: 90vw;
+		margin: 0 auto;
+			text-align: center;
+		}
+		.top{
+			font-size: 2rem;
+		}
+		
+		.down{
+			font-size: 2.5rem;
+		}
+}
